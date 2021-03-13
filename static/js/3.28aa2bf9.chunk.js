@@ -1,0 +1,2 @@
+(this.webpackJsonpsponty_web=this.webpackJsonpsponty_web||[]).push([[3],{115:function(t,s,e){"use strict";e.r(s);var i=e(1);s.default=function(t){var s=t.src,e=t.width,c=t.height,n=t.style;return Object(i.jsx)("img",{src:"/img/svg/".concat(s),alt:s,with:e,height:c,style:n})}}}]);
+//# sourceMappingURL=3.28aa2bf9.chunk.js.map
