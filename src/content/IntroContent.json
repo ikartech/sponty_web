@@ -1,0 +1,13 @@
+{
+  "title": "Sponty App",
+  "text": "Sponty is a spontaneous app.",
+  "button": [
+    {
+      "title": "Explore"
+    },
+    {
+      "title": "Learn More",
+      "color": "#fff"
+    }
+  ]
+}
