@@ -2,16 +2,21 @@ import { useState, Fragment, lazy } from "react";
 import { Row, Col, Drawer } from "antd";
 import { CSSTransition } from "react-transition-group";
 import { withTranslation } from "react-i18next";
+import { useHistory } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import * as S from "./styles";
 
 const SvgIcon = lazy(() => import("../../common/SvgIcon"));
 const Button = lazy(() => import("../../common/Button"));
 
-const Header = ({ t }) => {
+const Header = ({ t, displayItems }) => {
   const [isNavVisible] = useState(false);
   const [isSmallScreen] = useState(false);
   const [visible, setVisibility] = useState(false);
+  const history = useHistory();
+  const location = useLocation();
+  const isAtHomePage = location !== undefined && location.pathname === "/";
 
   const showDrawer = () => {
     setVisibility(!visible);
@@ -24,25 +29,59 @@ const Header = ({ t }) => {
   const MenuItem = () => {
     const scrollTo = (id) => {
       const element = document.getElementById(id);
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
-      setVisibility(false);
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+        });
+        setVisibility(false);
+      }
     };
     return (
       <Fragment>
-        <S.CustomNavLinkSmall onClick={() => scrollTo("about")}>
+        <S.CustomNavLinkSmall
+          onClick={() => {
+            if (!isAtHomePage) {
+              history.push("/");
+            }
+            scrollTo("about");
+          }}
+        >
           <S.Span>{t("About")}</S.Span>
         </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall onClick={() => scrollTo("mission")}>
+        <S.CustomNavLinkSmall
+          onClick={() => {
+            if (!isAtHomePage) {
+              history.push("/");
+            }
+            scrollTo("mission");
+          }}
+        >
           <S.Span>{t("Mission")}</S.Span>
         </S.CustomNavLinkSmall>
-        <S.CustomNavLinkSmall onClick={() => scrollTo("product")}>
+        <S.CustomNavLinkSmall
+          onClick={() => {
+            if (!isAtHomePage) {
+              history.push("/");
+            }
+            scrollTo("product");
+          }}
+        >
           <S.Span>{t("Product")}</S.Span>
+        </S.CustomNavLinkSmall>
+        <S.CustomNavLinkSmall onClick={() => history.push("/privacy-policy")}>
+          <S.Span>{t("Privacy Policy")}</S.Span>
+        </S.CustomNavLinkSmall>
+        <S.CustomNavLinkSmall onClick={() => history.push("/terms-of-service")}>
+          <S.Span>{t("Terms Of Service")}</S.Span>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall
           style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
+          onClick={() => {
+            if (!isAtHomePage) {
+              history.push("/");
+            }
+            scrollTo("contact");
+          }}
         >
           <S.Span>
             <Button>{t("Contact")}</Button>
