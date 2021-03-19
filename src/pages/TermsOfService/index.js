@@ -5,162 +5,173 @@ const Container = lazy(() => import("../../common/Container"));
 function TermsOfService() {
   return (
     <Container>
-      <strong>Terms &amp; Conditions</strong>{" "}
+      <h1 style={{ textAlign: "center" }}>
+        LICENSED APPLICATION END USER LICENSE AGREEMENT
+      </h1>
       <p>
-        By downloading or using the app, these terms will automatically apply to
-        you – you should make sure therefore that you read them carefully before
-        using the app. You’re not allowed to copy, or modify the app, any part
-        of the app, or our trademarks in any way. You’re not allowed to attempt
-        to extract the source code of the app, and you also shouldn’t try to
-        translate the app into other languages, or make derivative versions. The
-        app itself, and all the trade marks, copyright, database rights and
-        other intellectual property rights related to it, still belong to
-        Sponty.
-      </p>{" "}
+        Apps made available through the App Store are licensed, not sold, to
+        you. Your license to each App is subject to your prior acceptance of
+        either this Licensed Application End User License Agreement (“Standard
+        EULA”), or a custom end user license agreement between you and the
+        Application Provider (“Custom EULA”), if one is provided. Your license
+        to any Apple App under this Standard EULA or Custom EULA is granted by
+        Apple, and your license to any Third Party App under this Standard EULA
+        or Custom EULA is granted by the Application Provider of that Third
+        Party App. Any App that is subject to this Standard EULA is referred to
+        herein as the “Licensed Application.” The Application Provider or Apple
+        as applicable (“Licensor”) reserves all rights in and to the Licensed
+        Application not expressly granted to you under this Standard EULA.
+      </p>
       <p>
-        Sponty is committed to ensuring that the app is as useful and efficient
-        as possible. For that reason, we reserve the right to make changes to
-        the app or to charge for its services, at any time and for any reason.
-        We will never charge you for the app or its services without making it
-        very clear to you exactly what you’re paying for.
-      </p>{" "}
+        a. Scope of License: Licensor grants to you a nontransferable license to
+        use the Licensed Application on any Apple-branded products that you own
+        or control and as permitted by the Usage Rules. The terms of this
+        Standard EULA will govern any content, materials, or services accessible
+        from or purchased within the Licensed Application as well as upgrades
+        provided by Licensor that replace or supplement the original Licensed
+        Application, unless such upgrade is accompanied by a Custom EULA. Except
+        as provided in the Usage Rules, you may not distribute or make the
+        Licensed Application available over a network where it could be used by
+        multiple devices at the same time. You may not transfer, redistribute or
+        sublicense the Licensed Application and, if you sell your Apple Device
+        to a third party, you must remove the Licensed Application from the
+        Apple Device before doing so. You may not copy (except as permitted by
+        this license and the Usage Rules), reverse-engineer, disassemble,
+        attempt to derive the source code of, modify, or create derivative works
+        of the Licensed Application, any updates, or any part thereof (except as
+        and only to the extent that any foregoing restriction is prohibited by
+        applicable law or to the extent as may be permitted by the licensing
+        terms governing use of any open-sourced components included with the
+        Licensed Application).
+      </p>
       <p>
-        The Sponty app stores and processes personal data that you have provided
-        to us, in order to provide our Service. It’s your responsibility to keep
-        your phone and access to the app secure. We therefore recommend that you
-        do not jailbreak or root your phone, which is the process of removing
-        software restrictions and limitations imposed by the official operating
-        system of your device. It could make your phone vulnerable to
-        malware/viruses/malicious programs, compromise your phone’s security
-        features and it could mean that the Sponty app won’t work properly or at
-        all.
-      </p>{" "}
-      <div>
-        <p>
-          The app does use third party services that declare their own Terms and
-          Conditions.
-        </p>{" "}
-        <p>
-          Link to Terms and Conditions of third party service providers used by
-          the app
-        </p>{" "}
-        <ul>
-          <li>
-            <a
-              href="https://policies.google.com/terms"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Google Play Services
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://firebase.google.com/terms/analytics"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Google Analytics for Firebase
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://firebase.google.com/terms/crashlytics"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Firebase Crashlytics
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.mapbox.com/legal/tos"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Mapbox
-            </a>
-          </li>
-        </ul>
-      </div>{" "}
+        b. Consent to Use of Data: You agree that Licensor may collect and use
+        technical data and related information—including but not limited to
+        technical information about your device, system and application
+        software, and peripherals—that is gathered periodically to facilitate
+        the provision of software updates, product support, and other services
+        to you (if any) related to the Licensed Application. Licensor may use
+        this information, as long as it is in a form that does not personally
+        identify you, to improve its products or to provide services or
+        technologies to you.
+      </p>
       <p>
-        You should be aware that there are certain things that Sponty will not
-        take responsibility for. Certain functions of the app will require the
-        app to have an active internet connection. The connection can be Wi-Fi,
-        or provided by your mobile network provider, but Sponty cannot take
-        responsibility for the app not working at full functionality if you
-        don’t have access to Wi-Fi, and you don’t have any of your data
-        allowance left.
-      </p>{" "}
-      <p></p>{" "}
+        c. Termination. This Standard EULA is effective until terminated by you
+        or Licensor. Your rights under this Standard EULA will terminate
+        automatically if you fail to comply with any of its terms.
+      </p>
       <p>
-        If you’re using the app outside of an area with Wi-Fi, you should
-        remember that your terms of the agreement with your mobile network
-        provider will still apply. As a result, you may be charged by your
-        mobile provider for the cost of data for the duration of the connection
-        while accessing the app, or other third party charges. In using the app,
-        you’re accepting responsibility for any such charges, including roaming
-        data charges if you use the app outside of your home territory (i.e.
-        region or country) without turning off data roaming. If you are not the
-        bill payer for the device on which you’re using the app, please be aware
-        that we assume that you have received permission from the bill payer for
-        using the app.
-      </p>{" "}
+        d. External Services. The Licensed Application may enable access to
+        Licensor’s and/or third-party services and websites (collectively and
+        individually, "External Services"). You agree to use the External
+        Services at your sole risk. Licensor is not responsible for examining or
+        evaluating the content or accuracy of any third-party External Services,
+        and shall not be liable for any such third-party External Services. Data
+        displayed by any Licensed Application or External Service, including but
+        not limited to financial, medical and location information, is for
+        general informational purposes only and is not guaranteed by Licensor or
+        its agents. You will not use the External Services in any manner that is
+        inconsistent with the terms of this Standard EULA or that infringes the
+        intellectual property rights of Licensor or any third party. You agree
+        not to use the External Services to harass, abuse, stalk, threaten or
+        defame any person or entity, and that Licensor is not responsible for
+        any such use. External Services may not be available in all languages or
+        in your Home Country, and may not be appropriate or available for use in
+        any particular location. To the extent you choose to use such External
+        Services, you are solely responsible for compliance with any applicable
+        laws. Licensor reserves the right to change, suspend, remove, disable or
+        impose access restrictions or limits on any External Services at any
+        time without notice or liability to you.
+      </p>
       <p>
-        Along the same lines, Sponty cannot always take responsibility for the
-        way you use the app i.e. You need to make sure that your device stays
-        charged – if it runs out of battery and you can’t turn it on to avail
-        the Service, Sponty cannot accept responsibility.
-      </p>{" "}
+        e. NO WARRANTY: YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT USE OF THE
+        LICENSED APPLICATION IS AT YOUR SOLE RISK. TO THE MAXIMUM EXTENT
+        PERMITTED BY APPLICABLE LAW, THE LICENSED APPLICATION AND ANY SERVICES
+        PERFORMED OR PROVIDED BY THE LICENSED APPLICATION ARE PROVIDED "AS IS"
+        AND “AS AVAILABLE,” WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND,
+        AND LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH RESPECT
+        TO THE LICENSED APPLICATION AND ANY SERVICES, EITHER EXPRESS, IMPLIED,
+        OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+        AND/OR CONDITIONS OF MERCHANTABILITY, OF SATISFACTORY QUALITY, OF
+        FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT, AND
+        OF NONINFRINGEMENT OF THIRD-PARTY RIGHTS. NO ORAL OR WRITTEN INFORMATION
+        OR ADVICE GIVEN BY LICENSOR OR ITS AUTHORIZED REPRESENTATIVE SHALL
+        CREATE A WARRANTY. SHOULD THE LICENSED APPLICATION OR SERVICES PROVE
+        DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING,
+        REPAIR, OR CORRECTION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF
+        IMPLIED WARRANTIES OR LIMITATIONS ON APPLICABLE STATUTORY RIGHTS OF A
+        CONSUMER, SO THE ABOVE EXCLUSION AND LIMITATIONS MAY NOT APPLY TO YOU.
+      </p>
       <p>
-        With respect to Sponty’s responsibility for your use of the app, when
-        you’re using the app, it’s important to bear in mind that although we
-        endeavour to ensure that it is updated and correct at all times, we do
-        rely on third parties to provide information to us so that we can make
-        it available to you. Sponty accepts no liability for any loss, direct or
-        indirect, you experience as a result of relying wholly on this
-        functionality of the app.
-      </p>{" "}
+        f. Limitation of Liability. TO THE EXTENT NOT PROHIBITED BY LAW, IN NO
+        EVENT SHALL LICENSOR BE LIABLE FOR PERSONAL INJURY OR ANY INCIDENTAL,
+        SPECIAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING,
+        WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, BUSINESS
+        INTERRUPTION, OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF
+        OR RELATED TO YOUR USE OF OR INABILITY TO USE THE LICENSED APPLICATION,
+        HOWEVER CAUSED, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT,
+        OR OTHERWISE) AND EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY
+        OF SUCH DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OF
+        LIABILITY FOR PERSONAL INJURY, OR OF INCIDENTAL OR CONSEQUENTIAL
+        DAMAGES, SO THIS LIMITATION MAY NOT APPLY TO YOU. In no event shall
+        Licensor’s total liability to you for all damages (other than as may be
+        required by applicable law in cases involving personal injury) exceed
+        the amount of fifty dollars ($50.00). The foregoing limitations will
+        apply even if the above stated remedy fails of its essential purpose.
+      </p>
       <p>
-        At some point, we may wish to update the app. The app is currently
-        available on Android &amp; iOS – the requirements for both systems(and
-        for any additional systems we decide to extend the availability of the
-        app to) may change, and you’ll need to download the updates if you want
-        to keep using the app. Sponty does not promise that it will always
-        update the app so that it is relevant to you and/or works with the
-        Android &amp; iOS version that you have installed on your device.
-        However, you promise to always accept updates to the application when
-        offered to you, We may also wish to stop providing the app, and may
-        terminate use of it at any time without giving notice of termination to
-        you. Unless we tell you otherwise, upon any termination, (a) the rights
-        and licenses granted to you in these terms will end; (b) you must stop
-        using the app, and (if needed) delete it from your device.
-      </p>{" "}
+        g. You may not use or otherwise export or re-export the Licensed
+        Application except as authorized by United States law and the laws of
+        the jurisdiction in which the Licensed Application was obtained. In
+        particular, but without limitation, the Licensed Application may not be
+        exported or re-exported (a) into any U.S.-embargoed countries or (b) to
+        anyone on the U.S. Treasury Department's Specially Designated Nationals
+        List or the U.S. Department of Commerce Denied Persons List or Entity
+        List. By using the Licensed Application, you represent and warrant that
+        you are not located in any such country or on any such list. You also
+        agree that you will not use these products for any purposes prohibited
+        by United States law, including, without limitation, the development,
+        design, manufacture, or production of nuclear, missile, or chemical or
+        biological weapons.
+      </p>
       <p>
-        <strong>Changes to This Terms and Conditions</strong>
-      </p>{" "}
+        h. The Licensed Application and related documentation are "Commercial
+        Items", as that term is defined at 48 C.F.R. §2.101, consisting of
+        "Commercial Computer Software" and "Commercial Computer Software
+        Documentation", as such terms are used in 48 C.F.R. §12.212 or 48 C.F.R.
+        §227.7202, as applicable. Consistent with 48 C.F.R. §12.212 or 48 C.F.R.
+        §227.7202-1 through 227.7202-4, as applicable, the Commercial Computer
+        Software and Commercial Computer Software Documentation are being
+        licensed to U.S. Government end users (a) only as Commercial Items and
+        (b) with only those rights as are granted to all other end users
+        pursuant to the terms and conditions herein. Unpublished-rights reserved
+        under the copyright laws of the United States.
+      </p>
       <p>
-        We may update our Terms and Conditions from time to time. Thus, you are
-        advised to review this page periodically for any changes. We will notify
-        you of any changes by posting the new Terms and Conditions on this page.
-      </p>{" "}
-      <p>These terms and conditions are effective as of 2021-03-14</p>{" "}
+        i. Except to the extent expressly provided in the following paragraph,
+        this Agreement and the relationship between you and Apple shall be
+        governed by the laws of the State of California, excluding its conflicts
+        of law provisions. You and Apple agree to submit to the personal and
+        exclusive jurisdiction of the courts located within the county of Santa
+        Clara, California, to resolve any dispute or claim arising from this
+        Agreement. If (a) you are not a U.S. citizen; (b) you do not reside in
+        the U.S.; (c) you are not accessing the Service from the U.S.; and (d)
+        you are a citizen of one of the countries identified below, you hereby
+        agree that any dispute or claim arising from this Agreement shall be
+        governed by the applicable law set forth below, without regard to any
+        conflict of law provisions, and you hereby irrevocably submit to the
+        non-exclusive jurisdiction of the courts located in the state, province
+        or country identified below whose law governs:
+      </p>
       <p>
-        <strong>Contact Us</strong>
-      </p>{" "}
+        If you are a citizen of any European Union country or Switzerland,
+        Norway or Iceland, the governing law and forum shall be the laws and
+        courts of your usual place of residence.
+      </p>
       <p>
-        If you have any questions or suggestions about our Terms and Conditions,
-        do not hesitate to contact us at spontysup@gmail.com.
-      </p>{" "}
-      <p>
-        This Terms and Conditions page was generated by{" "}
-        <a
-          href="https://app-privacy-policy-generator.nisrulz.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          App Privacy Policy Generator
-        </a>
+        Specifically excluded from application to this Agreement is that law
+        known as the United Nations Convention on the International Sale of
+        Goods.
       </p>
     </Container>
   );

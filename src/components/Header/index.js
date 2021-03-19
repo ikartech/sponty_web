@@ -72,7 +72,7 @@ const Header = ({ t, displayItems }) => {
           <S.Span>{t("Privacy Policy")}</S.Span>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall onClick={() => history.push("/terms-of-service")}>
-          <S.Span>{t("Terms Of Service")}</S.Span>
+          <S.Span>{t("EULA")}</S.Span>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall
           style={{ width: "180px" }}
@@ -96,7 +96,7 @@ const Header = ({ t, displayItems }) => {
       <S.Container>
         <Row type="flex" justify="space-between" gutter={20}>
           <S.LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo_small.svg" />
+            <SvgIcon width={48} height={48} src="logo_small.svg" />
           </S.LogoContainer>
           <S.NotHidden>
             <MenuItem />
