@@ -34,7 +34,7 @@ function Profile({ user }) {
       justify="center"
       align="middle"
     >
-      <div>
+      <div onClick={user.onClick}>
         <img
           src={user.avatarUrl}
           style={{

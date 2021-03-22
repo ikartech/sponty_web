@@ -53,10 +53,8 @@ const Header = ({ t, displayItems }) => {
           <Button
             size={40}
             onClick={() => {
-              if (!isAtHomePage) {
-                history.push("/");
-              }
-              scrollTo("contact");
+              window.location.href =
+                "mailto:spontysup@gmail.com?subject=Contact%20Sponty";
             }}
             style={{
               marginLeft: 8,

@@ -21,6 +21,9 @@ function Team({ members }) {
       name: "Join Us",
       avatarUrl: process.env.PUBLIC_URL + "/img/home/smiley-grey.svg",
       description: "This could be you!",
+      onClick: () =>
+        (window.location.href =
+          "mailto:spontysup@gmail.com?subject=Join%20Sponty"),
     });
     if (my_row.length % 4 !== 0) {
       rows.push(my_row);
