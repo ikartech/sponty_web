@@ -19,6 +19,7 @@ const RightBlock = ({
   imageStyle,
   firstText,
   secondText,
+  buttonStyle,
 }) => {
   return (
     <S.RightBlockContainer>
@@ -61,6 +62,7 @@ const RightBlock = ({
                       <Button
                         key={id}
                         color={item.color}
+                        style={item.style}
                         width="true"
                         onClick={() => scrollTo("content")}
                       >

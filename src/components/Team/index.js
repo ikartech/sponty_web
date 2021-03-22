@@ -2,7 +2,7 @@ import { Col, Row } from "antd";
 import React, { lazy } from "react";
 
 const Container = lazy(() => import("../../common/Container"));
-const Profile = lazy(() => import("./profile"));
+const Profile = lazy(() => import("./Profile/profile"));
 
 function Team({ members }) {
   //Group the members into ax3 arrays.

@@ -8,6 +8,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import { Col, Row } from "antd";
+import "./profile.css";
 
 function Profile({ user }) {
   const iconSize = 16;
@@ -34,7 +35,10 @@ function Profile({ user }) {
       justify="center"
       align="middle"
     >
-      <div onClick={user.onClick}>
+      <div
+        onClick={user.onClick}
+        className={user.onClick ? "Hover" : undefined}
+      >
         <img
           src={user.avatarUrl}
           style={{

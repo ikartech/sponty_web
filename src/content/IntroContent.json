@@ -5,7 +5,12 @@
   "secondText": "spontaneously!",
   "button": [
     {
-      "title": "Explore"
+      "title": "Explore",
+      "color": "white",
+      "style": {
+        "background": "linear-gradient(#9DEDFF, #2DD3DE)",
+        "borderRadius": 40
+      }
     }
   ]
 }
