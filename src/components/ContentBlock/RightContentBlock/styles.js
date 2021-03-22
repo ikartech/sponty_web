@@ -1,12 +1,22 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const RightBlockContainer = styled.section`
   position: relative;
-  padding: 10rem 0 8rem;
+  padding: 0rem 0 8rem;
 
   @media only screen and (max-width: 768px) {
-    padding: 8rem 0 6rem;
+    padding: 0rem 0 0rem;
   }
+`;
+
+export const Gradienttext = styled.section`
+  background-color: #f3ec78;
+  background-image: linear-gradient(#f9d2fd, #f25fff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 `;
 
 export const Content = styled.p`

@@ -23,7 +23,7 @@ const Footer = ({ t }) => {
         key={src}
         aria-label={src}
       >
-        <SvgIcon src={src} width="25px" height="25px" />
+        <SvgIcon src={"/img/svg/" + src} width="25px" height="25px" />
       </a>
     );
   };
@@ -31,7 +31,7 @@ const Footer = ({ t }) => {
   return (
     <Fragment>
       <Fade bottom>
-        <S.Footer>
+        {/*    <S.Footer>
           <Container>
             <Row type="flex" justify="space-between">
               <Col lg={10} md={10} sm={12} xs={24}>
@@ -103,6 +103,7 @@ const Footer = ({ t }) => {
             </Row>
           </Container>
         </S.Footer>
+                  */}{" "}
         <S.Extra>
           <Container border="true">
             <Row
@@ -113,11 +114,14 @@ const Footer = ({ t }) => {
             >
               <S.NavLink to="/">
                 <S.LogoContainer>
-                  <SvgIcon
-                    src="logo.svg"
+                  <img
+                    src={`${process.env.PUBLIC_URL}/img/icons/logo.png`}
                     aria-label="homepage"
-                    width="101px"
-                    height="64px"
+                    style={{
+                      width: 60,
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
                   />
                 </S.LogoContainer>
               </S.NavLink>
@@ -139,7 +143,7 @@ const Footer = ({ t }) => {
                   src="instagram.svg"
                 />
                 <SocialLink
-                  href="https://medium.com/@appsponty"
+                  href="https://medium.com/sponty-app"
                   src="medium.svg"
                 />
               </S.FooterContainer>

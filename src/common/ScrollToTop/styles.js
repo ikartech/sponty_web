@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Up = styled.div`
   box-sizing: border-box;
@@ -10,7 +10,7 @@ export const Up = styled.div`
   list-style: none;
   position: fixed;
   right: 100px;
-  bottom: 50px;
+  bottom: 80px;
   z-index: 10;
   width: 40px;
   height: 40px;

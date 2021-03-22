@@ -13,7 +13,7 @@ const LeftContentBlock = ({ icon, title, content, section, t, id }) => {
         <Col lg={11} md={11} sm={12} xs={24}>
           <Slide left>
             <SvgIcon
-              src={icon}
+              src={"/img/svg/" + icon}
               className="about-block-image"
               width="100%"
               height="100%"
@@ -32,7 +32,11 @@ const LeftContentBlock = ({ icon, title, content, section, t, id }) => {
                     section.map((item, id) => {
                       return (
                         <Col key={id} span={11}>
-                          <SvgIcon src={item.icon} width="60px" height="60px" />
+                          <SvgIcon
+                            src={"/img/svg/" + item.icon}
+                            width="60px"
+                            height="60px"
+                          />
                           <S.MinTitle>{t(item.title)}</S.MinTitle>
                           <S.MinPara>{t(item.content)}</S.MinPara>
                         </Col>

@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import { Col } from 'antd';
+import styled from "styled-components";
+import { Col } from "antd";
 
 export const LeftContentBlock = styled.section`
   position: relative;
-  padding: 10rem 0 8rem;
+  padding: 0rem 0 8rem;
 
   @media only screen and (max-width: 768px) {
     padding: 4rem 0 4rem;
@@ -33,6 +33,7 @@ export const MinTitle = styled.h6`
   font-size: 1rem;
   line-height: 1rem;
   padding: 0.5rem 0;
+  color: #747474;
 `;
 
 export const MinPara = styled.p`

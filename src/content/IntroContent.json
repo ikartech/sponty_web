@@ -1,6 +1,8 @@
 {
   "title": "Sponty App",
   "text": "Sponty is a spontaneous app.",
+  "firstText": "Join activities around you",
+  "secondText": "spontaneously!",
   "button": [
     {
       "title": "Explore"

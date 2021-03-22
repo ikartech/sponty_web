@@ -2,7 +2,7 @@ import LeftContentBlock from "./LeftContentBlock";
 import RightContentBlock from "./RightContentBlock";
 
 const ContentBlock = (props) => {
-  console.log(props.expand);
+  console.log(props);
   if (props.type === "left") return <LeftContentBlock {...props} />;
   if (props.type === "right") return <RightContentBlock {...props} />;
   return null;

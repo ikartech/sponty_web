@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   background: ${(props) => props.color || "#faae3d"};
-  color: ${(props) => (props.color ? "#faae3d" : "#fff")};
+  color: ${(props) => (props.color ? "#fff" : "#000")};
   font-size: 1rem;
   font-weight: 700;
   width: 100%;
-  border: ${(props) => (props.color ? "1px solid #faae3d" : "0px")};
+  border: ${(props) => (props.color ? "1px solid " + props.color : "0px")};
   border-radius: 8px;
   height: 60px;
   outline: none;

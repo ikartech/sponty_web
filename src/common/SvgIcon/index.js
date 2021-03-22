@@ -1,6 +1,6 @@
 const SvgIcon = ({ src, width, height, style }) => (
   <img
-    src={`/img/svg/${src}`}
+    src={`${process.env.PUBLIC_URL}${src}`}
     alt={src}
     with={width}
     height={height}
