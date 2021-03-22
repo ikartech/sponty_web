@@ -51,6 +51,6 @@ export const members = [
   {
     name: "Dorbi",
     avatarUrl: process.env.PUBLIC_URL + "/img/home/dorbi.png",
-    description: "",
+    description: "Cat",
   },
 ];
