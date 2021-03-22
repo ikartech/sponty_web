@@ -168,3 +168,7 @@ export const LangSelect = styled.select`
   font-size: 1rem;
   background: rgb(249, 250, 252);
 `;
+
+export const Span = styled.span`
+  cursor: pointer;
+`;

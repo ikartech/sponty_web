@@ -5,11 +5,9 @@ import Fade from "react-reveal/Fade";
 
 import * as S from "./styles";
 
-const Button = lazy(() => import("../../common/Button"));
-
-const ImageBlock = ({ img, type }) => {
+const ImageBlock = ({ img, type, id }) => {
   return (
-    <S.MiddleBlock>
+    <S.ImageBlock id={id}>
       <Row type="flex" justify="center" align="middle">
         {type === "right" ? (
           <Fade right>
@@ -21,7 +19,7 @@ const ImageBlock = ({ img, type }) => {
           </Fade>
         )}
       </Row>
-    </S.MiddleBlock>
+    </S.ImageBlock>
   );
 };
 

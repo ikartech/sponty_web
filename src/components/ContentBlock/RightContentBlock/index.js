@@ -4,6 +4,7 @@ import Slide from "react-reveal/Slide";
 
 import SvgIcon from "../../../common/SvgIcon";
 import Button from "../../../common/Button";
+import { scrollTo } from "../../../common/util/util";
 
 import * as S from "./styles";
 
@@ -19,13 +20,6 @@ const RightBlock = ({
   firstText,
   secondText,
 }) => {
-  const scrollTo = (id) => {
-    const element = document.getElementById(id);
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
-
   return (
     <S.RightBlockContainer>
       <Row type="flex" justify="space-between" align="middle" id={id}>
@@ -68,7 +62,7 @@ const RightBlock = ({
                         key={id}
                         color={item.color}
                         width="true"
-                        onClick={() => scrollTo("about")}
+                        onClick={() => scrollTo("content")}
                       >
                         {t(item.title)}
                       </Button>

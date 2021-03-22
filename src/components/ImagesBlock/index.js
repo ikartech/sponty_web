@@ -5,26 +5,32 @@ import Fade from "react-reveal/Fade";
 
 import * as S from "./styles";
 
-const Button = lazy(() => import("../../common/Button"));
-
 const ImagesBlock = ({ leftImg, rightImg, leftImgWidth, rightImgWidth }) => {
   return (
-    <S.MiddleBlock>
+    <S.ImagesBlock>
       <Row type="flex" justify="center" align="middle">
         <Fade left>
           <img
             src={leftImg}
-            style={{ width: leftImgWidth ? leftImgWidth : "50%" }}
+            style={{
+              width: leftImgWidth ? leftImgWidth : "50%",
+              paddingLeft: "5%",
+              paddingRight: "5%",
+            }}
           />
         </Fade>
         <Fade right>
           <img
             src={rightImg}
-            style={{ width: rightImgWidth ? rightImgWidth : "50%" }}
+            style={{
+              width: rightImgWidth ? rightImgWidth : "50%",
+              paddingRight: "5%",
+              paddingLeft: "5%",
+            }}
           />
         </Fade>
       </Row>
-    </S.MiddleBlock>
+    </S.ImagesBlock>
   );
 };
 

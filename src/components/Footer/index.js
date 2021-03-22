@@ -2,7 +2,6 @@ import { lazy, Fragment } from "react";
 import { Row, Col } from "antd";
 import i18n from "i18next";
 import { withTranslation } from "react-i18next";
-import Fade from "react-reveal/Fade";
 
 import * as S from "./styles";
 
@@ -10,10 +9,6 @@ const SvgIcon = lazy(() => import("../../common/SvgIcon"));
 const Container = lazy(() => import("../../common/Container"));
 
 const Footer = ({ t }) => {
-  const handleChange = (event) => {
-    i18n.changeLanguage(event.target.value);
-  };
-
   const SocialLink = ({ href, src }) => {
     return (
       <a
@@ -30,8 +25,7 @@ const Footer = ({ t }) => {
 
   return (
     <Fragment>
-      <Fade bottom>
-        {/*    <S.Footer>
+      {/*    <S.Footer>
           <Container>
             <Row type="flex" justify="space-between">
               <Col lg={10} md={10} sm={12} xs={24}>
@@ -104,53 +98,52 @@ const Footer = ({ t }) => {
           </Container>
         </S.Footer>
                   */}{" "}
-        <S.Extra>
-          <Container border="true">
-            <Row
-              type="flex"
-              justify="space-between"
-              align="middle"
-              style={{ paddingTop: "3rem" }}
-            >
-              <S.NavLink to="/">
-                <S.LogoContainer>
-                  <img
-                    src={`${process.env.PUBLIC_URL}/img/icons/logo.png`}
-                    aria-label="homepage"
-                    style={{
-                      width: 60,
-                      height: "100%",
-                      objectFit: "cover",
-                    }}
-                  />
-                </S.LogoContainer>
-              </S.NavLink>
-              <S.FooterContainer>
-                {/*<SocialLink
+      <S.Extra>
+        <Container border="true">
+          <Row
+            type="flex"
+            justify="space-between"
+            align="middle"
+            style={{ paddingTop: "3rem" }}
+          >
+            <S.Span to="/">
+              <S.LogoContainer>
+                <img
+                  src={`${process.env.PUBLIC_URL}/img/icons/logo.png`}
+                  aria-label="homepage"
+                  style={{
+                    width: 60,
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              </S.LogoContainer>
+            </S.Span>
+            <S.FooterContainer>
+              {/*<SocialLink
                   href="https://github.com/Adrinlol/create-react-app-adrinlol"
                   src="github.svg"
                 />*/}
-                <SocialLink
-                  href="https://twitter.com/appsponty"
-                  src="twitter.svg"
-                />
-                <SocialLink
-                  href="https://www.linkedin.com/company/sponty/"
-                  src="linkedin.svg"
-                />
-                <SocialLink
-                  href="https://www.instagram.com/spontyapp/"
-                  src="instagram.svg"
-                />
-                <SocialLink
-                  href="https://medium.com/sponty-app"
-                  src="medium.svg"
-                />
-              </S.FooterContainer>
-            </Row>
-          </Container>
-        </S.Extra>
-      </Fade>
+              <SocialLink
+                href="https://twitter.com/appsponty"
+                src="twitter.svg"
+              />
+              <SocialLink
+                href="https://www.linkedin.com/company/sponty/"
+                src="linkedin.svg"
+              />
+              <SocialLink
+                href="https://www.instagram.com/spontyapp/"
+                src="instagram.svg"
+              />
+              <SocialLink
+                href="https://medium.com/sponty-app"
+                src="medium.svg"
+              />
+            </S.FooterContainer>
+          </Row>
+        </Container>
+      </S.Extra>
     </Fragment>
   );
 };

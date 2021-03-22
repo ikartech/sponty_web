@@ -2,18 +2,13 @@ import { lazy } from "react";
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import Fade from "react-reveal/Fade";
+import { scrollTo } from "../../common/util/util";
 
 import * as S from "./styles";
 
 const Button = lazy(() => import("../../common/Button"));
 
 const MiddleBlock = ({ title, content, button, t }) => {
-  const scrollTo = (id) => {
-    const element = document.getElementById(id);
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
   return (
     <S.MiddleBlock>
       <Row type="flex" justify="center" align="middle">

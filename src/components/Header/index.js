@@ -4,6 +4,7 @@ import { CSSTransition } from "react-transition-group";
 import { withTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { scrollTo } from "../../common/util/util";
 
 import * as S from "./styles";
 
@@ -26,15 +27,6 @@ const Header = ({ t, displayItems }) => {
   };
 
   const MenuItem = ({ textColor }) => {
-    const scrollTo = (id) => {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({
-          behavior: "smooth",
-        });
-        setVisibility(false);
-      }
-    };
     return (
       <div style={{ marginTop: "5vh", marginRight: "1vw" }}>
         <Fragment>
@@ -43,30 +35,12 @@ const Header = ({ t, displayItems }) => {
               if (!isAtHomePage) {
                 history.push("/");
               }
-              scrollTo("about");
+              scrollTo("team", () => {
+                setVisibility(false);
+              });
             }}
           >
-            <S.Span style={{ color: textColor }}>{t("About")}</S.Span>
-          </S.CustomNavLinkSmall>
-          <S.CustomNavLinkSmall
-            onClick={() => {
-              if (!isAtHomePage) {
-                history.push("/");
-              }
-              scrollTo("mission");
-            }}
-          >
-            <S.Span style={{ color: textColor }}>{t("Mission")}</S.Span>
-          </S.CustomNavLinkSmall>
-          <S.CustomNavLinkSmall
-            onClick={() => {
-              if (!isAtHomePage) {
-                history.push("/");
-              }
-              scrollTo("product");
-            }}
-          >
-            <S.Span style={{ color: textColor }}>{t("Product")}</S.Span>
+            <S.Span style={{ color: textColor }}>{t("Team")}</S.Span>
           </S.CustomNavLinkSmall>
           <S.CustomNavLinkSmall onClick={() => history.push("/privacy-policy")}>
             <S.Span style={{ color: textColor }}>{t("Privacy Policy")}</S.Span>
@@ -100,9 +74,9 @@ const Header = ({ t, displayItems }) => {
 
   return (
     <S.Header style={{ paddingTop: 0 }}>
-      <div
+      <S.Span
         style={{
-          background: "purple",
+          backgroundImage: "linear-gradient(#F79AFF, #E339F3)",
           transform: "translate(0%, -40%)",
           position: "absolute",
           width: "65vw",
@@ -111,22 +85,25 @@ const Header = ({ t, displayItems }) => {
           right: 0,
           borderRadius: "50%",
         }}
-      ></div>
+      ></S.Span>
       <div>
         <Row type="flex" justify="space-between" gutter={20}>
           <div
             aria-label="homepage"
             style={{ flex: 1, paddingTop: 0, display: "flex" }}
+            onClick={() => history.push("/")}
           >
-            <img
-              style={{
-                width: "40%",
-                height: "100%",
-                objectFit: "cover",
-                overflow: "hidden",
-              }}
-              src={process.env.PUBLIC_URL + "/img/home/half_circle_icon.png"}
-            />
+            <S.Span>
+              <img
+                style={{
+                  width: "40%",
+                  height: "100%",
+                  objectFit: "cover",
+                  overflow: "hidden",
+                }}
+                src={process.env.PUBLIC_URL + "/img/home/half_circle_icon.png"}
+              />
+            </S.Span>
           </div>
           <div style={{ position: "relative", maxWidth: "inherit" }}>
             <S.NotHidden>

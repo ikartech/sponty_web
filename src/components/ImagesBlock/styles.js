@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const MiddleBlock = styled.section`
+export const ImagesBlock = styled.section`
   position: relative;
-  padding: 7.5rem 0 3rem;
+  padding: 0 0 6rem;
   text-align: center;
   display: flex;
   justify-content: center;

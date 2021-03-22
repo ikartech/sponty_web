@@ -1,7 +1,7 @@
 import * as S from "./styles";
 
-const Container = ({ padding, border, children }) => (
-  <S.Container padding={padding} border={border}>
+const Container = ({ padding, border, children, id }) => (
+  <S.Container padding={padding} border={border} id={id}>
     {children}
   </S.Container>
 );
