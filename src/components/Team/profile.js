@@ -26,8 +26,8 @@ function Profile({ user }) {
 
   return (
     <Col
-      lg={8}
-      md={8}
+      lg={6}
+      md={6}
       sm={24}
       style={{ padding: 16 }}
       type="flex"

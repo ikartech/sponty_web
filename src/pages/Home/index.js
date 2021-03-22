@@ -216,7 +216,7 @@ const Home = () => {
           },
           {
             name: "Cansu",
-            avatarUrl: "",
+            avatarUrl: process.env.PUBLIC_URL + "/img/home/cansu.jpeg",
             links: {
               linkedin: "https://www.linkedin.com/in/cansu-doğan-9ab0b9183/",
               weburl: "http://cansudogan.design",

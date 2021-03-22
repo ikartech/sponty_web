@@ -12,10 +12,18 @@ function Team({ members }) {
     for (const i in members) {
       const member = members[i];
       my_row.push(member);
-      if (my_row.length % 3 === 0) {
+      if (my_row.length % 4 === 0) {
         rows.push(my_row);
         my_row = [];
       }
+    }
+    my_row.push({
+      name: "Join Us",
+      avatarUrl: process.env.PUBLIC_URL + "/img/home/smiley-grey.svg",
+      description: "This could be you!",
+    });
+    if (my_row.length % 4 !== 0) {
+      rows.push(my_row);
     }
     return rows;
   };
