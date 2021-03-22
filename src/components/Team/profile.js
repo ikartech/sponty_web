@@ -37,7 +37,15 @@ function Profile({ user }) {
       <div>
         <img
           src={user.avatarUrl}
-          style={{ borderRadius: "50%", width: 150, height: 150 }}
+          style={{
+            borderRadius: "50%",
+            width: 160,
+            height: 160,
+            objectFit: "cover",
+            objectPosition: user.objectPosition
+              ? user.objectPosition
+              : undefined,
+          }}
         />
       </div>
       <div
