@@ -1,12 +1,13 @@
 export const members = [
   {
     name: "Aytunç",
-    avatarUrl: "https://github.com/aytunch.png?size=400",
+    avatarUrl: process.env.PUBLIC_URL + "/img/home/aytunc.jpg",
     links: {
       linkedin: "https://www.linkedin.com/in/aytunc-isseven-19921a45/",
       github: "https://github.com/aytunch",
     },
     description: "",
+    objectPosition: "0 16%",
   },
   {
     name: "Sercan",
@@ -31,7 +32,6 @@ export const members = [
     links: {
       linkedin: "https://www.linkedin.com/in/cansu-doğan-9ab0b9183/",
       weburl: "http://cansudogan.design",
-      dribble: "https://dribbble.com/cansudogan",
       behance: "https://www.behance.net/cansudogan",
     },
     objectPosition: "0 24%",
