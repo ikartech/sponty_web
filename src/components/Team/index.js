@@ -36,14 +36,14 @@ function Team({ members }) {
       <Col>
         <Row type="flex" justify="center" align="middle">
           <img
-            style={{ height: "1.5rem", objectFit: "cover", paddingRight: 12 }}
+            style={{ height: "1.85rem", objectFit: "cover", paddingRight: 12 }}
             src={`${process.env.PUBLIC_URL}/img/home/team_1.png`}
           />
-          <div style={{ fontSize: "1.5rem", color: "#676767" }}>
+          <div style={{ fontSize: "1.85rem", color: "#676767" }}>
             Meet Our Team
           </div>
           <img
-            style={{ height: "1.5rem", objectFit: "cover", paddingLeft: 12 }}
+            style={{ height: "1.85rem", objectFit: "cover", paddingLeft: 12 }}
             src={`${process.env.PUBLIC_URL}/img/home/team_2.png`}
           />
         </Row>
